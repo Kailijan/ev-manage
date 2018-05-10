@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return redirect()->route('login');
 });
 
 Route::get('/login', function() {
     return view('login');
-});
+})->name('login');
